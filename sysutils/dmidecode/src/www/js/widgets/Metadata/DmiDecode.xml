@@ -1,0 +1,13 @@
+<metadata>
+  <dmidecode>
+    <filename>DmiDecode.js</filename>
+    <endpoints>
+      <endpoint>/api/dmidecode/service/get</endpoint>
+    </endpoints>
+    <translations>
+      <title>DMIDecode</title>
+      <item>Item</item>
+      <value>Value</value>
+    </translations>
+  </dmidecode>
+</metadata>
