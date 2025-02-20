@@ -6,8 +6,15 @@
     </endpoints>
     <translations>
       <title>DMIDecode</title>
-      <item>Item</item>
-      <value>Value</value>
+      <system>Platform</system>
+      <bios>BIOS</bios>
+      <Manufacturer>Manufacturer</Manufacturer>
+      <Product>Product Name</Product>
+      <Version>Version</Version>
+      <Serial>Serial Number</Serial>
+      <Family>Family</Family>
+      <Vendor>Vendor</Vendor>
+      <Release>Release Date</Release>
     </translations>
   </dmidecode>
 </metadata>
