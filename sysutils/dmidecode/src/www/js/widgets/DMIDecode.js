@@ -24,12 +24,11 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-import BaseTableWidget from 'widget-base-table';
-
 export default class DMIDecode extends BaseTableWidget {
   constructor() {
     super();
     this.title = 'DMIDecode data';
+    // set tick timeout to high value - none of these values should ever change, so no tick function
     this.tickTimeout = 120;
   }
 
@@ -55,7 +54,7 @@ export default class DMIDecode extends BaseTableWidget {
 
   async onMarkupRendered() {
     const dmiData = await this.ajaxCall('/api/dmidecode/service/get');
-    if (!dmiData || dmiData?.status !== 'No error') {
+    if (!dmiData || dmiData?.status !== 'ok') {
       this.displayError('dmi lookup failed');
       return;
     }
@@ -88,12 +87,13 @@ export default class DMIDecode extends BaseTableWidget {
   }
 
   displayError(message) {
+    // if something went wrong, display error message in system table
     const $error = $(`
-        <div class="error-message">
+        <div>
             ${message}
         </div>
     `);
-    $('#dmiTable').empty().append($error);
+    $('#system-table').empty().append($error);
 }
 
 }
