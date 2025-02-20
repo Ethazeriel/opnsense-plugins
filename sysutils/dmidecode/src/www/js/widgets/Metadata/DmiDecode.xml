@@ -5,7 +5,7 @@
       <endpoint>/api/dmidecode/service/get</endpoint>
     </endpoints>
     <translations>
-      <title>DMIDecode</title>
+      <title>Hardware Information</title>
       <system>Platform</system>
       <bios>BIOS</bios>
       <Manufacturer>Manufacturer</Manufacturer>
