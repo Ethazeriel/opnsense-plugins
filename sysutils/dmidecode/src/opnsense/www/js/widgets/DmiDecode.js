@@ -27,15 +27,12 @@
 export default class DMIDecode extends BaseTableWidget {
   constructor() {
     super();
-    this.title = 'DMIDecode data';
-    // set tick timeout to high value - none of these values should ever change, so no tick function
-    this.tickTimeout = 120;
+    this.title = 'DMIDecode Data';
   }
 
   getGridOptions() {
     return {
       sizeToContent: 650
-    
     }
   }
 
